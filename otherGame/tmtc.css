@@ -1,0 +1,82 @@
+@font-face {
+    font-family: retro;
+    src: url(../font/retro.ttf);
+}
+
+body {
+    background-color: #8e6a5e;
+}
+
+.game {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.title {
+    font-family: retro, serif;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.board {
+    height: 50%;
+    width: 50%;
+    border: 0.2rem solid black;
+}
+
+.teams {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span {
+    font-size: 1.5rem;
+    font-family: retro, serif;
+    margin-bottom: 1rem;
+}
+
+input, .deleteAllTeams {
+    font-family: retro, serif;
+    width: 25rem;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border-style: hidden;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.deleteAllTeams {
+    display: none;
+    margin: 1rem 1rem;
+    background-color: #d31717;
+}
+
+.teamName {
+    font-family: retro, serif;
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+.deleteThisTeam {
+    font-family: retro, serif;
+    padding: 1rem;
+    border-style: hidden;
+    border-radius: 1rem;
+    margin: 1rem 2rem;
+    background-color: #d31717;
+}
+
+.deleteAllTeams:hover, .deleteThisTeam:hover {
+    transition-duration: 1s;
+    background-color: #ff0000;
+}
+
+.shape {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    border: 0.1rem solid black;
+    position: absolute;
+}
